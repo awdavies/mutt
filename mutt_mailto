@@ -1,0 +1,30 @@
+#-------------------------
+# Mailto Config
+#-------------------------
+source /etc/Muttrc.gpg.dist
+source "gpg -d ~/.secret/.passwd.gpg |"
+
+set from = "a.w.davies.vio@gmail.com"
+set realname=  "Andrew Davies"
+
+set imap_user = "a.w.davies.vio@gmail.com"
+set imap_pass = $my_pass2
+set folder = "imaps://imap.gmail.com"
+set spoolfile = "+INBOX"
+set postponed ="+[Gmail]/Drafts"
+set smtp_url = "smtps://a.w.davies.vio@smtp.gmail.com"
+set smtp_pass = $my_pass2
+
+set header_cache = ~/.mutt/hcache
+unset imap_passive
+set imap_keepalive = 500
+set mail_check = 300
+set mailcap_path = ~/.mutt/mailcap
+auto_view text/html
+set tilde
+
+source '~/.mutt/mutt_colors'
+
+set sort=threads
+
+source '~/.mutt/mutt_macros'
