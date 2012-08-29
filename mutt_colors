@@ -1,0 +1,22 @@
+color normal	white black
+color attachment brightyellow black
+color hdrdefault cyan black
+color markers	brightred black
+color quoted	yellow black
+color signature cyan black
+color status	black yellow 
+color tilde	yellow black
+color tree	yellow black
+
+color indicator black yellow
+
+color index	yellow black ~D
+color index	magenta black ~T
+
+color header	brightgreen black ^From:
+color header	brightcyan black ^To:
+color header	brightcyan black ^Reply-To:
+color header	brightcyan black ^Cc:
+color header	brightblue black ^Subject:
+
+color body	yellow black [\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+

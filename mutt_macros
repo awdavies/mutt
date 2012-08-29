@@ -1,0 +1,14 @@
+#------------------------------
+# Macros!
+#------------------------------
+set meta_key=yes
+macro index \e1 "y1<return><return>" #ALT+1 for first account
+macro index \e2 "y2<return><return>" #ALT+2 for second account
+macro index \e3 "y3<return><return>"
+macro pager \e1 "q<esc>1"
+macro pager \e2 "q<esc>2"
+macro pager \e3 "q<esc>3"
+bind pager k previous-line
+bind pager j next-line
+bind pager [ previous-unread
+bind pager ] next-unread
